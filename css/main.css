@@ -1,0 +1,253 @@
+/* Start Global Rules */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+/* Small */
+@media (min-width: 768px){
+    .container{
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px){
+    .container{
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px){
+    .container{
+        width: 1170px;
+    }
+}
+/* End Global Rules */
+.main-section{
+    background-image: url(../images/background.png);
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+.logo img{
+    width: 60px;
+    margin-right: 20%;
+}
+.flex{
+    display: flex;
+}
+.fa-search{
+    line-height: 30px;
+}
+.input{
+    width: 140px;
+    height: 30px;
+    border-color: #ccc;
+    box-shadow: 1px 1px 3px #ccc;
+    border-radius: 10px;
+    text-align: center;
+    color: #aaa;
+    
+}
+
+.social-icons{
+    box-shadow: 1px 1px 5px #ccc;
+    padding: 10px; 
+    border-radius: 10px;
+    position: fixed;
+    width: 40px;
+    height: 150px;
+    margin: 30px; 
+    margin-left: 5%;
+}
+.fa-facebook,
+.fa-twitter,
+.fa-instagram{
+    margin-bottom: 20px;
+}
+.fa-facebook,
+.fa-twitter,
+.fa-instagram,
+.fa-youtube{
+    cursor: pointer;
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+}
+@media(max-width: 667px){
+    .main{
+        display: block;
+    }
+    .main .main img{
+        width: 300px;
+        margin: auto;
+        display: block;
+    }
+    .paragraph{
+        text-align: center;
+    }
+    .paragraph button{
+        margin-bottom: 60px;
+    }
+}
+.main img{
+    width: 350px;
+}
+.paragraph h2{
+    color: purple;
+}
+.paragraph span{
+    letter-spacing: 8px;
+    margin-left: 3px;
+    line-height: 3;
+}
+button{
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 10px;
+    margin-top: 25px;
+    font-size: 16px;
+}
+
+.product-section h2{
+    text-align: center;
+    color: purple;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.product-section .product{
+    display: flex;
+} 
+/* Start Portfolio */
+.imgs-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.imgs-container .box{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px 1px #ccc;
+    margin-right: 10px;
+    margin-left: 10px;
+} 
+.imgs-container .box .caption p:hover{
+    color: purple;
+    cursor: pointer;
+}
+.imgs-container .box::before{
+    content: "Add To Cart";
+    width: 100px;
+    height: 40px;
+    background-color: purple;
+    color: white;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 10px;
+    left: 35%;
+    font-size: 12px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.imgs-container .box img{
+    width: 240px;
+    height: 240px;
+    margin: 30px 30px 10px;
+}
+.box .caption h4{
+    text-align: center; 
+    margin-bottom: 10px;
+    color: #aaa;
+    font-weight: normal;
+}
+.box .caption p{
+    text-align: center; 
+    margin-bottom: 70px;
+    font-weight: bold;
+}
+/* End Portfolio */
+.footer h2{
+    text-align: center;
+    margin: 50px 50px 40px;
+}
+form input[type="email"]{
+    display: block;
+    box-shadow: 1px 1px 5px #ccc;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 100px 10px 10px;
+    margin: auto;
+}
+form input[type="submit"]{
+    display: block;
+    width: 90px;
+    background-color: black;
+    color: white;
+    padding: 7px 0; 
+    border: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 15px;
+}
+form input[type="email"]:focus,
+form input[type="submit"]:focus{
+    outline: none;
+}
+form ::placeholder{
+    color: #aaa;
+}
+.footer hr{
+    width: 80%;
+    margin: 20px auto;
+}
+.footer img{
+    width: 60px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.footer .element{
+    display: flex;
+    box-shadow: 1px 1px 5px #ccc;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px auto;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+.footer .women{
+    margin-left: 7%;
+    margin-right: 7%;
+}
+.men, .women, .kids{
+    cursor: pointer;
+}
+.footer .copyright{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 60px;
+}
